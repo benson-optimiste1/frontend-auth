@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import CardContainer from "../Components/CardContainer"
 
 export default function Home(){
 
@@ -15,7 +16,10 @@ export default function Home(){
     return(
         <>
         <h1 className="home">Welcome To Ben's Page ❕</h1>
+        
+        <CardContainer/>
         {LoggedIn && <button onClick={() => localStorage.clear()}>Logout</button>}
+        
         </>
     )
 }
